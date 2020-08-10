@@ -1,0 +1,249 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(128, 128, 128);
+  filter: invert(50%) sepia(73%) saturate(0%) hue-rotate(227deg) brightness(86%)
+    contrast(72%);
+}
+
+a:hover {
+  color: rgb(96, 96, 96);
+  filter: invert(38%) sepia(1%) saturate(15%) hue-rotate(314deg) brightness(92%)
+    contrast(84%);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+#site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  z-index: 100;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#site-header > .header-inner-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-header > .header-inner-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-header > .header-inner-left > .header-social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-header > .header-inner-right > .header-menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.bg-container {
+  position: absolute;
+  width: 100%;
+}
+
+.background-wrapper {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+.background-wrapper > .background {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+}
+
+#galaxy.background {
+  z-index: 4;
+  left: 28vw;
+}
+
+#stars-1.background {
+  z-index: 3;
+}
+
+#stars-2.background {
+  z-index: 2;
+}
+
+#stars-3.background {
+  z-index: 1;
+}
+
+.header-logo > a > img {
+  width: 6rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(236deg)
+    brightness(0%) contrast(0%);
+}
+
+.primary-menu-wrapper {
+  position: absolute;
+  opacity: 0;
+}
+
+.primary-menu,
+.social-menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: auto;
+}
+
+.primary-menu {
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.social-menu {
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.primary-menu > li {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+}
+
+.primary-menu > li > a {
+  text-decoration: none;
+}
+
+.social-menu > li {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+}
+
+.menu-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn-wrapper > .menu-btn {
+  background: none;
+  border: none;
+}
+
+.menu-btn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  z-index: 98 !important;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  margin-top: 30vh;
+}
+
+.hero > h1,
+.hero > h3 {
+  width: 32rem;
+}
+
+.next-btn-wrapper {
+  margin-top: 30vh;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 2rem;
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  z-index: 99;
+}
+
+.search-widget {
+  padding: 1rem;
+}
